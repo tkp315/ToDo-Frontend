@@ -63,7 +63,7 @@ export default function Navbar({ children }) {
             )}
           </div>
 
-          {isLoggedIn ? (
+          {JSON.parse(isLoggedIn) ? (
             <button onClick={logout} className="btn btn-warning">
               Logout
             </button>
