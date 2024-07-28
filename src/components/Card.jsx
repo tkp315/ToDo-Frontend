@@ -14,7 +14,7 @@ export default function Card({ data, id }) {
   }
 
   return (
-    <div className=" flex flex-col gap-3">
+    <div className=" flex flex-col gap-3 checked:bg-primary">
       <div
         onClick={whenClicked}
         className=" flex flex-row gap-2 cursor-pointer "
