@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { json, Link } from "react-router-dom";
 import React, { useState } from "react";
 import { BsPersonCircle } from "react-icons/bs";
 import { useSelector } from "react-redux";
@@ -31,7 +31,7 @@ export default function Navbar({ children }) {
         </div>
         <div className="flex-none gap-2">
           <div>
-            {isLoggedIn ? (
+            {JSON.parse(isLoggedIn )? (
               <div className="dropdown dropdown-end">
                 <div
                   tabIndex={0}
